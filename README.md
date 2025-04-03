@@ -1,35 +1,35 @@
 # Problem plecakowy
  
- ## Wstêp
- Projekt zawiera implementacjê aplikacji rozwi¹zuj¹cej problem plecakowy. Nale¿a³o stworzyæ aplikacjê, która umo¿liwia u¿ytkownikowi rozwi¹zanie problemu plecakowego wraz z graficznym interfejsem u¿ytkownika. Nale¿a³o tak¿e zaimplementowaæ testy jednostkowe sprawdzaj¹ce poprawnoœæ dzia³ania aplikacji. Projekt powsta³ na potrzeby kursu Platformy Programistyczne .NET i Java na Politechnice Wroc³awskiej.
+ ## WstÄ™p
+ Projekt zawiera implementacjÄ™ aplikacji rozwiÄ…zujÄ…cej problem plecakowy. NaleÅ¼aÅ‚o stworzyÄ‡ aplikacjÄ™, ktÃ³ra umoÅ¼liwia uÅ¼ytkownikowi rozwiÄ…zanie problemu plecakowego wraz z graficznym interfejsem uÅ¼ytkownika. NaleÅ¼aÅ‚o takÅ¼e zaimplementowaÄ‡ testy jednostkowe sprawdzajÄ…ce poprawnoÅ›Ä‡ dziaÅ‚ania aplikacji. Projekt powstaÅ‚ na potrzeby kursu Platformy Programistyczne .NET i Java na Politechnice WrocÅ‚awskiej.
 
  ## Opis problemu
- Danymi wejœciowymi s¹:
- - liczba przedmiotów
- - seed (ziarno) do generowania przedmiotów
- - pojemnoœæ plecaka
+ Danymi wejÅ›ciowymi sÄ…:
+ - liczba przedmiotÃ³w
+ - seed (ziarno) do generowania przedmiotÃ³w
+ - pojemnoÅ›Ä‡ plecaka
 
- Ka¿dy z przedmiotów posiada wartoœæ i wagê. Celem jest wybranie takich przedmiotów, aby ich sumaryczna waga nie przekracza³a pojemnoœci plecaka, a sumaryczna wartoœæ by³a jak najwiêksza. Problem ten jest NP-trudny - w projekcie zosta³ zaimplementowany algorytm zach³anny.
+ KaÅ¼dy z przedmiotÃ³w posiada wartoÅ›Ä‡ i wagÄ™. Celem jest wybranie takich przedmiotÃ³w, aby ich sumaryczna waga nie przekraczaÅ‚a pojemnoÅ›ci plecaka, a sumaryczna wartoÅ›Ä‡ byÅ‚a jak najwiÄ™ksza. Problem ten jest NP-trudny - w projekcie zostaÅ‚ zaimplementowany algorytm zachÅ‚anny.
 
  ## Aplikacja konsolowa .NET
- Ta czêœæ projektu sk³ada siê z:
- - **Przedmiot.cs** - klasa reprezentuj¹ca przedmiot, przechowuj¹ca jego wartoœæ i wagê
- - **Problem.cs** - klasa s³u¿¹ca do generowania instancji problemu oraz rozwi¹zania problemu
- - **Result.cs** - klasa reprezentuj¹ca wynik dzia³ania algorytmu, zwracaj¹ca wybrane przedmioty, ich sumaryczn¹ wartoœæ oraz wagê
- - **Problem.cs** - klasa s³u¿¹ca do pobierania danych wejœciowych od u¿ytkownika oraz wyœwietlania wyników
+ Ta czÄ™Å›Ä‡ projektu skÅ‚ada siÄ™ z:
+ - **Przedmiot.cs** - klasa reprezentujÄ…ca przedmiot, przechowujÄ…ca jego wartoÅ›Ä‡ i wagÄ™
+ - **Problem.cs** - klasa sÅ‚uÅ¼Ä…ca do generowania instancji problemu oraz rozwiÄ…zania problemu
+ - **Result.cs** - klasa reprezentujÄ…ca wynik dziaÅ‚ania algorytmu, zwracajÄ…ca wybrane przedmioty, ich sumarycznÄ… wartoÅ›Ä‡ oraz wagÄ™
+ - **Program.cs** - klasa sÅ‚uÅ¼Ä…ca do pobierania danych wejÅ›ciowych od uÅ¼ytkownika oraz wyÅ›wietlania wynikÃ³w
  
  ## Testy jednostkowe
- Projekt zawiera zestaw testów jednostkowych, które weryfikuj¹ poprawnoœæ:
- - generowania przedmiotów
- - rozwi¹zywania problemów, w zale¿noœci od spe³nienia ograniczeñ przez przedmioty (pojemnoœæ plecaka)
- - poprawnoœæ wyników zwracanych przez algorytm
+ Projekt zawiera zestaw testÃ³w jednostkowych, ktÃ³re weryfikujÄ… poprawnoÅ›Ä‡:
+ - generowania przedmiotÃ³w
+ - rozwiÄ…zywania problemÃ³w, w zaleÅ¼noÅ›ci od speÅ‚nienia ograniczeÅ„ przez przedmioty (pojemnoÅ›Ä‡ plecaka)
+ - poprawnoÅ›Ä‡ wynikÃ³w zwracanych przez algorytm
  
-Znajduj¹ siê one w klasie **ProblemTests.cs**.
+ZnajdujÄ… siÄ™ one w klasie **ProblemTests.cs**.
  
  ## GUI
- Aplikacja posiada równie¿ interfejs graficzny w formie aplikacji okienkowej. Posiada on obs³ugê b³êdów i walidacjê danych. Pobiera od u¿ytkownika dane wejœciowe i zwraca zestaw wygenerowanych przedmiotów oraz wynik. 
+ Aplikacja posiada rÃ³wnieÅ¼ interfejs graficzny w formie aplikacji okienkowej. Posiada on obsÅ‚ugÄ™ bÅ‚Ä™dÃ³w i walidacjÄ™ danych. Pobiera od uÅ¼ytkownika dane wejÅ›ciowe i zwraca zestaw wygenerowanych przedmiotÃ³w oraz wynik. 
 
- Znajduje siê ona w klasie **Form1.cs**.
+ Znajduje siÄ™ ona w klasie **Form1.cs**.
 
  ## Wykorzystane technologie
  - .NET 8.0
